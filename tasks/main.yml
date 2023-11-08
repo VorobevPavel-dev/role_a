@@ -1,0 +1,7 @@
+- name: Wrap string into facts
+  ansible.builtin.set_fact:
+    _role_a_result: "{{ role_a_prefix }}{{ role_a_base }}{{ role_a_suffix }}"
+
+- name: Print result
+  ansible.builtin.debug:
+    msg: "{{ _role_a_result }}"

@@ -1,0 +1,20 @@
+argument_specs:
+  main:
+    short_description: Add suffix and prefix to string
+    options:
+      role_a_base:
+        description: String to wrap
+        type: str
+        required: true
+
+      role_a_prefix:
+        description: String to add at the beginning of role_a_base
+        type: str
+        required: false
+        default: "Hello, "
+
+      role_a_suffix:
+        description: String to add at the end of role_a_base
+        type: str
+        required: false
+        default: "!"
